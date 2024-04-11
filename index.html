@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h1 class="logo">LOWNUTS CARD GAME</h1>
         <h2>Can you beat the nut?</h2>
     </header>
@@ -25,20 +25,26 @@
     <section class="game-area">
         <div>
             <p>Draw your card!</p>
-            <button class="btn-card-nut">NUT</button>
-            <img src="assets/images/noun-nut-6399839.svg" alt="nut-icon">
-            <button class="btn-card-joker">JOKER</button>
-            <img src="assets/images/noun-joker-4327097.svg" alt="joker-icon">
-            <button class="btn-card-aces">ACES</button>
-            <img src="assets/images/noun-playing-cards-515127.svg" alt="playing-cards-icon">
+
+            <button class="btn-card-nut">
+                <img src="assets/images/noun-nut-6399839.svg" alt="nut-icon" class="the-nut"></button>
+
+            <button class="btn-card-joker">
+                <img src="assets/images/noun-joker-4327097.svg" alt="joker-icon" class="joker"></button>
+
+            <button class="btn-card-aces">
+                <img src="assets/images/noun-playing-cards-515127.svg" alt="playing-cards-icon" class="aces"></button>
         </div>
+        <section class="card-area">
+            <div id="score-message"></div>
 
-        <div id="score-message"></div>
-        <div class="player-one"></div>
-        <h3></h3>
-        <div class="the-nut"></div>
-        <h3></h3>
+            <span id="players-card"></span>
+            <span id="nuts-card"></span>
 
+            <div class="player">PLAYER</div>
+            <div class="the-ai-nut">THE NUT</div>
+
+        </section>
     </section>
 
     <footer>

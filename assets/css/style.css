@@ -1,0 +1,75 @@
+/* --- Global style --- */
+
+body {
+    background-color: rgb(220, 202, 42);
+    font-family: "Rubik Mono One", sans-serif;
+    color: black;
+    text-align: center;
+}
+
+/* -- header -- */
+
+.header {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+}
+
+h4 {
+    color: black;
+    font-size: 120%;
+}
+
+/* -- game area -- */
+.game-area {
+    align-content: center;
+    box-sizing: border-box;
+    background-image: url("../images/bkg_green.png");
+    width: 75%;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+    font-size: 2vh;
+}
+
+.the-nut,
+.joker,
+.aces {
+    box-sizing: border-box;
+    width: 100px;
+    height: auto;
+}
+
+.player {
+    background-color: rgb(229, 131, 32);
+    float: left;
+    width: 40%;
+    height: 500px;
+    margin: 3.5vh;
+    margin-top: 4vh;
+    padding-top: 1vh;
+    font-size: 2vh;
+}
+
+.the-ai-nut {
+    background-color: rgb(232, 19, 157);
+    float: right;
+    width: 40%;
+    height: 500px;
+    margin: 3.5vh;
+    margin-top: 4vh;
+    padding-top: 1vh;
+    font-size: 2vh;
+}
+
+/* -- footer -- */
+footer {
+    background-color: brown;
+    background-image: url("../images/bkg_green.png");
+    font-size: 120%;
+    align-items: center;
+}
+
+footer p {
+    color: black
+}
