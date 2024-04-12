@@ -26,15 +26,15 @@
         <div>
             <p>Draw your card!</p>
 
-            <button class="btn-card-nut">
+            <button class="btn-card-nut-1">
                 <img src="assets/images/noun-nut-6399839.svg" alt="nut-icon" class="the-nut" aria-label="Nut"
                     game-choice="0" name="players-card" id="show-image-button"></button>
 
-            <button class="btn-card-joker">
+            <button class="btn-card-joker-2">
                 <img src="assets/images/noun-joker-4327097.svg" alt="joker-icon" class="joker" aria-label="Joker-hat"
                     game-choice="1"></button>
 
-            <button class="btn-card-aces">
+            <button class="btn-card-aces-3">
                 <img src="assets/images/noun-playing-cards-515127.svg" alt="playing-cards-icon" class="aces"
                     aria-label="Cards" game-choice="2"></button>
         </div>
@@ -44,8 +44,16 @@
             <span id="players-card"></span>
             <span id="nuts-card"></span>
 
-            <div class="player">PLAYER</div>
-            <div class="the-ai-nut">THE NUT</div>
+
+            <!-- images in player and nut areas -->
+            <div class="player">PLAYER
+                <div img id="nut-card" src="../lownuts-game/assets/images/joker.png"></div>
+            </div>
+
+            <div class="the-ai-nut">THE NUT
+                <div img id="nut-card" src="../lownuts-game/assets/images/tnl.png"></div>
+
+            </div>
         </section>
         <section>
             <div class="message-winner">

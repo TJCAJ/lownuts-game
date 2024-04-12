@@ -74,6 +74,13 @@ h4 {
     box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
 }
 
+/* images */
+
+img {
+    width: 70px;
+    height: 210px;
+}
+
 .message-winner {
     display: flex;
     justify-content: center;
