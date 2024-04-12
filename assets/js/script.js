@@ -1,5 +1,38 @@
-function userChoice() {
-    return prompt('Nut, Joker or Aces?');
-}
+/**
+ * Set up constants for DOM elements and add core structure
+ * for choices and img visualizations
+ */
 
-// alert(userChoice());
+const buttons = document.getElementsByClassName("control");
+const playerImageChoice = document.getElementsByName("players-card");
+const computerImageChoice = document.getElementsByName("computers-card");
+const playerScore = document.getElementById("player-score");
+const computerScore = document.getElementById("computer-score");
+const messageWinner = document.getElementsByClassName("control");
+
+
+// buttons
+
+
+
+
+
+
+
+// score
+
+
+
+
+
+
+
+// visualizations
+
+
+
+
+
+
+
+// message winner
