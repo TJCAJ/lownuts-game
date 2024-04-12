@@ -3,7 +3,7 @@
  * for choices and img visualizations
  */
 
-const buttons = document.getElementsByClassName("control");
+const buttons = document.getElementsById("show-image-button");
 const playerImageChoice = document.getElementsByName("players-card");
 const computerImageChoice = document.getElementsByName("computers-card");
 const playerScore = document.getElementById("player-score");
@@ -12,7 +12,6 @@ const messageWinner = document.getElementsByClassName("control");
 
 
 // buttons
-
 
 
 
