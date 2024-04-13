@@ -27,6 +27,23 @@ function playGame(playerImageChoice) {
     const computerImageChoice = choices[Math.floor(Math.random() * 3)]
 
     console.log(computerImageChoice)
+    let result = "";
+
+    if (playerImageChoice === computerImageChoice) {
+        result = "IT'S A DRAW!";
+    } else {
+        switch (playerImageChoice) {
+            case "nut":
+                result = (computerImageChoice === "joker") ? "PLAYER WIN" : "COMPUTER WIN";
+                break;
+            case "joker":
+                result = (computerImageChoice === "aces") ? "PLAYER WIN" : "COMPUTER WIN";
+                break;
+            case "aces":
+                result = (computerImageChoice === "nut") ? "PLAYER WIN" : "COMPUTER WIN";
+                break;
+        }
+    }
 
 }
 
