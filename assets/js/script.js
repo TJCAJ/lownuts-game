@@ -22,7 +22,11 @@ let computerScore = 0;
 
 // game-choice buttons
 //show_nut_button
-function runGame() {
+function playGame(playerImageChoice) {
+
+    const computerImageChoice = choices[Math.floor(Math.random() * 3)]
+
+    console.log(computerImageChoice)
 
 }
 
