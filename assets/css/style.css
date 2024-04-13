@@ -21,9 +21,9 @@ h4 {
 
 /* game-choice buttons */
 
-.btn-card-nut,
-.btn-card-joker,
-.btn-card-aces {
+.btn-card-nut-1,
+.btn_card_joker_2,
+.btn_card_aces_3 {
 
     box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
 }

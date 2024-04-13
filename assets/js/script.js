@@ -22,6 +22,7 @@ getButton.addEventListener('click', function () {
 
 
 
+
 // game and score
 //player_score
 //computer_score
