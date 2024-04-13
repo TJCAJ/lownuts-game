@@ -19,23 +19,23 @@
 <body>
     <header class="header">
         <h1 class="logo">CAN YOU BEAT THE NUT?</h1>
-        <h2>a fresh take on the stone - scissors - bag game</h2>
+        <h2>(Rock - Paper - Scissors)</h2>
     </header>
 
     <section class="game-area">
-        <div>
+        <div id="choices">
             <p>Draw your card!</p>
 
             <!-- buttons -->
-            <button class="btn-nut-1">
+            <button class="btn-nut-1" onclick="playGame('nut')">
                 <img src="assets/images/noun-nut-6399839.svg" alt="nut-icon" class="the-nut" aria-label="nut"
                     data-type="1" id="show_nut_button">NUT</button>
 
-            <button class="btn-joker-2">
+            <button class="btn-joker-2" onclick="playGame('joker')">
                 <img src="assets/images/noun-joker-4327097.svg" alt="joker-icon" class="joker" aria-label="joker-hat"
                     data-type="2" id="show_joker_button">JOKER</button>
 
-            <button class="btn-aces-3">
+            <button class="btn-aces-3" onclick="playGame('aces')">
                 <img src="assets/images/noun-playing-cards-515127.svg" alt="playing-cards-icon" class="aces"
                     aria-label="Cards" data-type="3" id="show_aces_button">ACES</button>
         </div>
@@ -57,15 +57,15 @@
             </p>
 
             <!-- images to be displayed in player and nut areas -->
-            <div class="player">PLAYER
+            <div id="playerScoreDisplay" class=" player">PLAYER
             </div>
-            <div class="the-ai-nut">THE NUT
+            <div id="computerScoreDisplay" class="the-ai-nut">THE NUT
             </div>
         </section>
 
         <!-- message area -->
         <section>
-            <div class="message_winner">
+            <div class="messageWinner">GOOD LUCK IT WAS CLOSE!
             </div>
         </section>
 

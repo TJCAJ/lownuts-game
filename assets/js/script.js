@@ -5,12 +5,15 @@
  * for choices and img visualizations
  */
 
-const buttons = document.getElementsById("show_image_button");
-const playerImageChoice = document.getElementsByName("players_card");
-const computerImageChoice = document.getElementsByName("computers_card");
-const playerScore = document.getElementById("player_score");
-const computerScore = document.getElementById("computer_score");
-const messageWinner = document.getElementsByClassName("control");
+const choices = ["nut", "joker", "aces"];
+const button = document.getElementsById("button");
+const playerImageChoice = document.getElementsByName("playerImageChoice");
+const computerImageChoice = document.getElementsByName("computerImageChoice");
+const playerScoreDisplay = document.getElementById("playerScoreDisplay");
+const computerScoreDisplay = document.getElementById("ccomputerScoreDisplay");
+const messageWinner = document.getElementsByClassName("messageWinner");
+let playerScore = 0;
+let computerScore = 0;
 
 
 /* Add event listeners to buttons */
