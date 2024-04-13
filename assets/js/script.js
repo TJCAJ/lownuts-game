@@ -47,15 +47,11 @@ function playGame(playerImageChoice) {
 
 }
 
-
-
-
-
-
 // game and score
 //player_score
 //computer_score
 function incrementScore() {
+
 
 }
 
