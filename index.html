@@ -26,37 +26,41 @@
         <div>
             <p>Draw your card!</p>
 
-            <button class="btn-card-nut-1">
-                <img src="assets/images/noun-nut-6399839.svg" alt="nut-icon" class="the-nut" aria-label="Nut"
-                    game-choice="0" name="players-card" id="show-image-button"></button>
+            <!-- buttons -->
+            <button class="btn_card_nut_1">
+                <img src="assets/images/noun-nut-6399839.svg" alt="nut-icon" class="the_nut" aria-label="Nut"
+                    game-choice="0" name="players_card" id="show_nut_button"></button>
 
-            <button class="btn-card-joker-2">
+            <button class="btn_card_joker_2">
                 <img src="assets/images/noun-joker-4327097.svg" alt="joker-icon" class="joker" aria-label="Joker-hat"
-                    game-choice="1"></button>
+                    game-choice="1" id="show_joker_button"></button>
 
-            <button class="btn-card-aces-3">
+            <button class="btn_card-aces_3">
                 <img src="assets/images/noun-playing-cards-515127.svg" alt="playing-cards-icon" class="aces"
-                    aria-label="Cards" game-choice="2"></button>
+                    aria-label="Cards" game-choice="2" id="show_aces_button"></button>
         </div>
+
+        <!-- card and score area -->
         <section class="card-area">
             <div id="score-message"></div>
 
-            <span id="players-card"></span>
-            <span id="nuts-card"></span>
+            <span img id="joker_card" name="joker_card" src="../lownuts-game/assets/images/joker.png">
+            </span>
+            <span img id="nut_card" name="nut_card" src="../lownuts-game/assets/images/tnl.png">
+            </span>
+            <span img id="aces_card" name="aces_card" src="../lownuts-game/assets/images/aces.png">
+            </span>
 
-
-            <!-- images in player and nut areas -->
+            <!-- images to be displayed in player and nut areas -->
             <div class="player">PLAYER
-                <div img id="nut-card" src="../lownuts-game/assets/images/joker.png"></div>
             </div>
-
             <div class="the-ai-nut">THE NUT
-                <div img id="nut-card" src="../lownuts-game/assets/images/tnl.png"></div>
-
             </div>
         </section>
+
+        <!-- message area -->
         <section>
-            <div class="message-winner">
+            <div class="message_winner">
             </div>
         </section>
 

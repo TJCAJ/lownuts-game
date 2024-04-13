@@ -19,6 +19,8 @@ h4 {
     font-size: 120%;
 }
 
+/* game-choice buttons */
+
 .btn-card-nut,
 .btn-card-joker,
 .btn-card-aces {
@@ -26,7 +28,8 @@ h4 {
     box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
 }
 
-/* -- game area -- */
+/* -- game and score area -- */
+
 .game-area {
     align-content: center;
     box-sizing: border-box;
@@ -74,12 +77,14 @@ h4 {
     box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
 }
 
-/* images */
+/* vizualisations */
 
-img {
+#joker-card {
     width: 70px;
     height: 210px;
 }
+
+/* message area */
 
 .message-winner {
     display: flex;
@@ -98,6 +103,7 @@ img {
 }
 
 /* -- footer -- */
+
 footer {
     background-color: brown;
     background-image: url("../images/bkg_green.png");
