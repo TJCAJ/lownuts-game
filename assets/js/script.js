@@ -13,10 +13,9 @@ const messageWinner = document.getElementsByClassName("control");
 
 // game-choice buttons
 //show_nut_button
-let getButton = document.getElementById("show_nut_button");
-getButton.addEventListener('click', function () {
-    alert('This is a button')
-})
+function runGame() {
+
+}
 
 
 
@@ -26,7 +25,9 @@ getButton.addEventListener('click', function () {
 // game and score
 //player_score
 //computer_score
+function incrementScore() {
 
+}
 
 
 
@@ -34,7 +35,9 @@ getButton.addEventListener('click', function () {
 
 // visualizations
 //joker_card
+function displayImageChoice() {
 
+}
 
 
 
@@ -42,3 +45,7 @@ getButton.addEventListener('click', function () {
 
 // message winner
 //message_winner
+
+function displayWinner() {
+
+}
