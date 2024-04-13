@@ -1,3 +1,5 @@
+// Wait for the DOM to finish loading before running the game
+
 /**
  * Set up constants for DOM elements and add core structure
  * for choices and img visualizations
@@ -9,6 +11,10 @@ const computerImageChoice = document.getElementsByName("computers_card");
 const playerScore = document.getElementById("player_score");
 const computerScore = document.getElementById("computer_score");
 const messageWinner = document.getElementsByClassName("control");
+
+
+/* Add event listeners to buttons */
+
 
 
 // game-choice buttons
