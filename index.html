@@ -27,15 +27,15 @@
             <p>Draw your card!</p>
 
             <!-- buttons -->
-            <button class="btn-nut-1" onclick="playGame('nut')">
-                <img src="assets/images/noun-nut-6399839.svg" alt="nut-icon" class="the-nut" aria-label="nut"
-                    data-type="1" id="show_nut_button">NUT</button>
+            <button class="btn-controll" onclick="playGame('nut')">
+                <img src="assets/images/noun-nut-6399839.svg" alt="nut-icon" class="nut" aria-label="nut" data-type="1"
+                    id="show_nut_button">NUT</button>
 
-            <button class="btn-joker-2" onclick="playGame('joker')">
+            <button class="btn-controll" onclick="playGame('joker')">
                 <img src="assets/images/noun-joker-4327097.svg" alt="joker-icon" class="joker" aria-label="joker-hat"
                     data-type="2" id="show_joker_button">JOKER</button>
 
-            <button class="btn-aces-3" onclick="playGame('aces')">
+            <button class="btn-controll" onclick="playGame('aces')">
                 <img src="assets/images/noun-playing-cards-515127.svg" alt="playing-cards-icon" class="aces"
                     aria-label="Cards" data-type="3" id="show_aces_button">ACES</button>
         </div>
@@ -44,20 +44,20 @@
         <section class="card-area">
             <div id="score-message"></div>
 
-            <span img id="joker_card" name="joker_card" src="../lownuts-game/assets/images/joker.png">
+            <span img id="joker_card" name="joker" src="../lownuts-game/assets/images/joker.png">
             </span>
-            <span img id="nut_card" name="nut_card" src="../lownuts-game/assets/images/tnl.png">
+            <span img id="nut_card" name="nut" src="../lownuts-game/assets/images/tnl.png">
             </span>
-            <span img id="aces_card" name="aces_card" src="../lownuts-game/assets/images/aces.png">
+            <span img id="aces_card" name="aces" src="../lownuts-game/assets/images/aces.png">
             </span>
 
-            <p class="scores">Score:
-                <span id="playerscore">0</span>
-                <span id="computerscore">0</span>
+            <p class="scores">
+                <span id="playerscore"></span>
+                <span id="computerscore"></span>
             </p>
 
             <!-- images to be displayed in player and nut areas -->
-            <div id="playerScoreDisplay" class=" player">PLAYER
+            <div id="playerScoreDisplay" class="player">PLAYER
             </div>
             <div id="computerScoreDisplay" class="the-ai-nut">THE NUT
             </div>
@@ -65,7 +65,7 @@
 
         <!-- message area -->
         <section>
-            <div class="messageWinner">GOOD LUCK IT WAS CLOSE!
+            <div class="display-winner">
             </div>
         </section>
 

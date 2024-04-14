@@ -21,59 +21,21 @@ h4 {
 
 /* game-choice buttons */
 
-/* nut button */
+/* buttons */
 
-.btn-nut-1 {
+.btn-controll {
     content: attr(data-type);
     color: yellow;
     box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
 }
 
-.btn-nut-1 {
-    color: rgb(131, 7, 7);
-    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
-}
-
-.btn-nut-1:active,
-.btn-nut-1:hover {
-    color: rgb(229, 41, 226);
-    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
-}
-
-/* joker button */
-
-.btn-joker-2::after {
-    content: attr(data-type);
-    color: yellow;
-    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
-}
-
-.btn-joker-2 {
+.btn-controll {
     color: rgb(63, 34, 227);
     box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
 }
 
-.btn-joker-2:active,
-.btn-joker-2:hover {
-    color: rgb(229, 41, 226);
-    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
-}
-
-/* ace button */
-
-.btn-aces-3::after {
-    content: attr(data-type);
-    color: yellow;
-    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
-}
-
-.btn-aces-3 {
-    color: rgb(131, 96, 50);
-    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
-}
-
-.btn-aces-3:active,
-.btn-aces-3:hover {
+.btn-controll:active,
+.btn-controll:hover {
     color: rgb(229, 41, 226);
     box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
 }
@@ -93,7 +55,7 @@ h4 {
     border-radius: 6px;
 }
 
-.the-nut,
+.nut,
 .joker,
 .aces {
     box-sizing: border-box;
@@ -127,6 +89,16 @@ h4 {
     box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
 }
 
+#playerScoreDisplay {
+    font: BLACK;
+    font-size: 2.rem;
+}
+
+#computerScoreDisplay {
+    font: BLACK;
+    font-size: 2.rem;
+}
+
 /* vizualisations */
 
 #joker-card {
@@ -136,10 +108,10 @@ h4 {
 
 /* message area */
 
-.message-winner {
+.display-winner {
     display: flex;
     justify-content: center;
-    background-color: rgb(242, 235, 239);
+    background-color: rgb(156, 221, 132);
     width: 40%;
     height: 50px;
     margin: 3.5vh;
@@ -150,6 +122,7 @@ h4 {
     font-size: 2vh;
     border-radius: 6px;
     box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+    font: red;
 }
 
 /* -- footer -- */

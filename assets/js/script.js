@@ -1,51 +1,44 @@
 // Wait for the DOM to finish loading before running the game
 
 /**
- * Set up constants for DOM elements and add core structure
+ * Constants for DOM elements andcore structure
  * for choices and img visualizations
  */
 
 const choices = ["nut", "joker", "aces"];
-const button = document.getElementsById("button");
-const playerImageChoice = document.getElementsByName("playerImageChoice");
-const computerImageChoice = document.getElementsByName("computerImageChoice");
+const button = document.getElementsByClassName("btn-controll");
+const playerChoice = document.getElementsByClassName("player-choice");
+const computerChoice = document.getElementsByName("computer-choice");
 const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const computerScoreDisplay = document.getElementById("ccomputerScoreDisplay");
-const messageWinner = document.getElementsByClassName("messageWinner");
+const displayWinner = document.getElementsByClassName("displa-winner");
 let playerScore = 0;
 let computerScore = 0;
 
 
 /* Add event listeners to buttons */
+function playGame() {}
+let computerImageChoice = [Math.floor(Math.random() * 3)];
 
-
-
-// game-choice buttons
-//show_nut_button
-function playGame(playerImageChoice) {
-
-    const computerImageChoice = choices[Math.floor(Math.random() * 3)]
-
-    console.log(computerImageChoice)
-    let result = "";
-
-    if (playerImageChoice === computerImageChoice) {
-        result = "IT'S A DRAW!";
-    } else {
-        switch (playerImageChoice) {
-            case "nut":
-                result = (computerImageChoice === "joker") ? "PLAYER WIN" : "COMPUTER WIN";
-                break;
-            case "joker":
-                result = (computerImageChoice === "aces") ? "PLAYER WIN" : "COMPUTER WIN";
-                break;
-            case "aces":
-                result = (computerImageChoice === "nut") ? "PLAYER WIN" : "COMPUTER WIN";
-                break;
-        }
+if (playerImageChoice === computerImageChoice) {
+    result = "IT'S A DRAW!";
+} else {
+    switch (playerImageChoice) {
+        case "nut":
+            result = (computerImageChoice === "joker") ? "PLAYER WIN" : "COMPUTER WIN";
+            break;
+        case "joker":
+            result = (computerImageChoice === "aces") ? "PLAYER WIN" : "COMPUTER WIN";
+            break;
+        case "aces":
+            result = (computerImageChoice === "nut") ? "PLAYER WIN" : "COMPUTER WIN";
+            break;
     }
-
 }
+
+
+
+
 
 // game and score
 //player_score
@@ -62,7 +55,7 @@ function incrementScore() {
 // visualizations
 //joker_card
 function displayImageChoice() {
-
+    let picture = getElementsByName("nut", "joker", "aces");
 }
 
 
